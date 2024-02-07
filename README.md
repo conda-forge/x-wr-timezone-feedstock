@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/x-wr-timezone-f
 
 Home: https://github.com/niccokunzmann/x-wr-timezone
 
-Package license: LGPL-3.0-only
+Package license: LGPL-3.0-or-later
 
 Summary: A Python module and program to convert calendars using X-WR-TIMEZONE to standard ones.
 
