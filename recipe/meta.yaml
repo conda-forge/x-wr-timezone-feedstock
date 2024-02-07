@@ -14,7 +14,7 @@ build:
     - x-wr-timezone = x_wr_timezone:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,7 +37,7 @@ test:
 about:
   home: https://github.com/niccokunzmann/x-wr-timezone
   summary: A Python module and program to convert calendars using X-WR-TIMEZONE to standard ones.
-  license: LGPL-3.0-only
+  license: LGPL-3.0-or-later
   license_file: LICENSE
 
 extra:
