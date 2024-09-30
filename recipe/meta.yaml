@@ -1,5 +1,5 @@
 {% set name = "x-wr-timezone" %}
-{% set version = "0.0.7" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/x_wr_timezone-{{ version }}.tar.gz
-  sha256: ccbaae164a52086535fd2eb1dced164a5250acc83a672fbb044d11e81a268965
+  sha256: 720fb58275c450f9563deaa1118c69ecdcad70874e9c0b4a23dcb2c10584af80
 
 build:
   entry_points:
