@@ -34,6 +34,7 @@ test:
     - x-wr-timezone --help
   requires:
     - pip
+    - tzdata
 
 about:
   home: https://github.com/niccokunzmann/x-wr-timezone
