@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - pip
   run:
-    - python >=3.7
+    - python >=3.9
     - icalendar
-    - pytz
+    - tzdata
 
 test:
   imports:
