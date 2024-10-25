@@ -21,6 +21,7 @@ requirements:
     - python >=3.9
     - setuptools
     - pip
+    - tzdata
   run:
     - python >=3.9
     - icalendar
@@ -35,6 +36,7 @@ test:
   requires:
     - pip
     - tzdata
+    - icalendar
 
 about:
   home: https://github.com/niccokunzmann/x-wr-timezone
