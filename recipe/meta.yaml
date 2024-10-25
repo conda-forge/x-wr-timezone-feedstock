@@ -21,11 +21,11 @@ requirements:
     - python >=3.9
     - setuptools
     - pip
-    - tzdata
+    - python-tzdata
   run:
     - python >=3.9
     - icalendar
-    - tzdata
+    - python-tzdata
 
 test:
   imports:
@@ -35,7 +35,7 @@ test:
     - x-wr-timezone --help
   requires:
     - pip
-    - tzdata
+    - python-tzdata
     - icalendar
 
 about:
