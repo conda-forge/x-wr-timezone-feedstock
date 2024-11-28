@@ -43,7 +43,7 @@ test:
 about:
   home: https://github.com/niccokunzmann/x-wr-timezone
   summary: Repair Google Calendar - This Python module and program makes ICS/iCalendar files using X-WR-TIMEZONE compatible with the RFC 5545 standard.
-  license: LGPL-3.0
+  license: LGPL-3.0-or-later
   license_file: LICENSE
 
 extra:
