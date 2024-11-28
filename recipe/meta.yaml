@@ -18,14 +18,15 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - pip
     - python-tzdata
   run:
-    - python >=3.9
-    - icalendar
+    - python >={{ python_min }}
+    - icalendar >=6.1.0
     - python-tzdata
+    - click
 
 test:
   imports:
@@ -34,9 +35,11 @@ test:
     - pip check
     - x-wr-timezone --help
   requires:
+    - python {{ python_min }}
     - pip
     - python-tzdata
-    - icalendar
+    - icalendar >=6.1.0
+    - pytest_click
 
 about:
   home: https://github.com/niccokunzmann/x-wr-timezone
