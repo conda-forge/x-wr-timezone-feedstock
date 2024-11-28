@@ -1,13 +1,13 @@
 {% set name = "x-wr-timezone" %}
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/x_wr_timezone-{{ version }}.tar.gz
-  sha256: 720fb58275c450f9563deaa1118c69ecdcad70874e9c0b4a23dcb2c10584af80
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/x_wr_timezone-{{ version }}.tar.gz
+  sha256: 1e475d2dedcd2128550cd88b4b5773a224e936e1c9f22ff50104622180455265
 
 build:
   entry_points:
@@ -18,14 +18,15 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - pip
     - python-tzdata
   run:
-    - python >=3.9
-    - icalendar
+    - python >={{ python_min }}
+    - icalendar >=6.1.0
     - python-tzdata
+    - click
 
 test:
   imports:
@@ -34,13 +35,14 @@ test:
     - pip check
     - x-wr-timezone --help
   requires:
+    - python {{ python_min }}
     - pip
     - python-tzdata
-    - icalendar
+    - icalendar >=6.1.0
 
 about:
   home: https://github.com/niccokunzmann/x-wr-timezone
-  summary: A Python module and program to convert calendars using X-WR-TIMEZONE to standard ones.
+  summary: Repair Google Calendar - This Python module and program makes ICS/iCalendar files using X-WR-TIMEZONE compatible with the RFC 5545 standard.
   license: LGPL-3.0-or-later
   license_file: LICENSE
 
