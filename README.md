@@ -7,7 +7,7 @@ Home: https://github.com/niccokunzmann/x-wr-timezone
 
 Package license: LGPL-3.0-or-later
 
-Summary: A Python module and program to convert calendars using X-WR-TIMEZONE to standard ones.
+Summary: Repair Google Calendar - This Python module and program makes ICS/iCalendar files using X-WR-TIMEZONE compatible with the RFC 5545 standard.
 
 Current build status
 ====================

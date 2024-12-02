@@ -14,7 +14,7 @@ build:
     - x-wr-timezone = x_wr_timezone:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
